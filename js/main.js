@@ -1,9 +1,18 @@
 const nomeUtente = prompt("Qual è il tuo nome?");
 const cognomeUtente = prompt("Qual è il tuo cognome?");
-const colorePreferito = prompt ("Qual è il tuo colore preferito?")
+const colorePreferito = prompt("Qual è il tuo colore preferito?")
 
-const infoUtente = document.getElementById("nome-utente");
 
-infoUtente.innerHTML = `${nomeUtente} ${cognomeUtente} ${colorePreferito}`;
+// prova calcoli
+const annoDuemila = 0;
+let anniPassatiDalDuemila;
+anniPassatiDalDuemila = 22;
+const anno = annoDuemila + anniPassatiDalDuemila;
 
-console.log("infoUtente");
+const passwordUtente = document.getElementById("password-utente");
+
+passwordUtente.innerHTML = `<div>
+                                <strong>${nomeUtente}${cognomeUtente}${colorePreferito}${anno}</strong>
+                            </div>`;
+
+console.log(passwordUtente);
